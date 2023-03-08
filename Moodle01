@@ -1,0 +1,110 @@
+<br><strong>Problem, ein Datenbank wird benötigt um die aktualisierte Tabelle zu zeigen ! wie __ weiß ich nicht!&nbsp;</strong><br>Material buchen
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Spalte 1</th>
+            <th>Spalte 2</th>
+            <th>Spalte 3</th>
+            <th>Spalte 4</th>
+            <th>Spalte 5</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+        <tr>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td>XXXXX</td>
+            <td><button onclick="deleteRow(this)">Buchen</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="popup" id="popup">
+    Ihr Material wurde gebucht.
+</div>
+
+<script>
+    function deleteRow(button) {
+        var row = button.parentNode.parentNode;
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
+        setTimeout(function() {
+            popup.style.display = "none";
+            row.parentNode.removeChild(row);
+        }, 2000);
+    }
+</script>
